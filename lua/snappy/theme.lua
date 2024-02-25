@@ -507,9 +507,9 @@ function M.setup()
 
 		-- Alpha
 		AlphaShortcut = { fg = c.purple, bold = true },
-		AlphaHeader = { fg = c.fg_gutter },
+		AlphaHeader = { fg = c.comment },
 		AlphaHeaderLabel = { fg = c.orange },
-		AlphaFooter = { fg = c.fg_gutter },
+		AlphaFooter = { fg = c.comment },
 		AlphaButtons = { fg = c.blue, bold = true },
 
 		-- WhichKey
