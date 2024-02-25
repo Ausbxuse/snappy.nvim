@@ -104,7 +104,7 @@ function M.setup()
 		String = { fg = c.yellow }, --   a string constant: "this is a string"
 		Character = { fg = c.green }, --  a character constant: 'c', '\n'
 		Number = { fg = c.purple }, --   a number constant: 234, 0xff
-		-- Boolean       = { }, --  a boolean constant: TRUE, false
+		Boolean = { fg = c.green, bold = true }, --  a boolean constant: TRUE, false
 		-- Float         = { }, --    a floating point constant: 2.3e10
 
 		Identifier = { fg = c.magenta, style = options.styles.variables }, -- (preferred) any variable name
@@ -294,7 +294,7 @@ function M.setup()
 		["@label"] = { fg = c.blue }, -- For labels: `label:` in C and `:label:` in Lua.
 
 		--- Types
-		["@type.builtin"] = { fg = util.darken(c.blue1, 0.8) },
+		["@type.builtin"] = { fg = c.cyan, bold = true },
 		["@variable.member"] = { fg = c.cyan }, -- For fields.
 		["@property"] = { fg = c.cyan },
 
