@@ -54,7 +54,7 @@ function M.setup()
 		Substitute = { bg = c.red, fg = c.black }, -- |:substitute| replacement text highlighting
 		LineNr = { fg = c.fg_gutter }, -- Line number for ":number" and ":#" commands, and when 'number' or 'relativenumber' option is set.
 		CursorLineNr = { fg = c.dark5 }, -- Like LineNr when 'cursorline' or 'relativenumber' is set for the cursor line.
-		MatchParen = { fg = c.orange, bold = true }, -- The character under the cursor or just before it, if it is a paired bracket, and its match. |pi_paren.txt|
+		MatchParen = { fg = c.yellow1, bold = true }, -- The character under the cursor or just before it, if it is a paired bracket, and its match. |pi_paren.txt|
 		ModeMsg = { fg = c.fg_dark, bold = true }, -- 'showmode' message (e.g., "-- INSERT -- ")
 		MsgArea = { fg = c.fg_dark }, -- Area for messages and cmdline
 		-- MsgSeparator= { }, -- Separator for scrolled messages, `msgsep` flag of 'display'
@@ -111,8 +111,8 @@ function M.setup()
 		Function = { fg = c.blue, style = options.styles.functions }, -- function name (also: methods for classes)
 
 		Statement = { fg = c.magenta }, -- (preferred) any statement
-		-- Conditional   = { }, --  if, then, else, endif, switch, etc.
-		-- Repeat        = { }, --   for, do, while, etc.
+		Conditional = { bold = false }, --  if, then, else, endif, switch, etc.
+		Repeat = { fg = c.green }, --   for, do, while, etc.
 		-- Label         = { }, --    case, default, etc.
 		Operator = { fg = c.blue5 }, -- "sizeof", "+", "*", etc.
 		Keyword = { fg = c.cyan, style = options.styles.keywords }, --  any other keyword
@@ -283,7 +283,7 @@ function M.setup()
 		["@string.escape"] = { fg = c.magenta }, -- For escape characters within a string.
 
 		--- Functions
-		["@constructor"] = { fg = c.blue }, -- For constructor calls and definitions: `= { }` in Lua, and Java constructors.
+		["@constructor"] = { fg = c.blue, bold = true }, -- For constructor calls and definitions: `= { }` in Lua, and Java constructors.
 		["@variable.parameter"] = { fg = c.yellow }, -- For parameters of a function.
 		["@variable.parameter.builtin"] = { fg = util.lighten(c.yellow, 0.8) }, -- For builtin parameters of a function, e.g. "..." or Smali's p[1-99]
 
@@ -300,8 +300,8 @@ function M.setup()
 
 		--- Identifiers
 		["@variable"] = { fg = c.fg, style = options.styles.variables }, -- Any variable name that does not have another highlight.
-		["@variable.builtin"] = { fg = c.red }, -- Variable names that are defined by the languages, like `this` or `self`.
-		["@module.builtin"] = { fg = c.red }, -- Variable names that are defined by the languages, like `this` or `self`.
+		["@variable.builtin"] = { fg = c.orange }, -- Variable names that are defined by the languages, like `this` or `self`.
+		["@module.builtin"] = { fg = c.orange }, -- Variable names that are defined by the languages, like `this` or `self`.
 
 		--- Text
 		-- ["@markup.raw.markdown"] = { fg = c.blue },
@@ -506,11 +506,11 @@ function M.setup()
 		DashboardIcon = { fg = c.cyan, bold = true },
 
 		-- Alpha
-		AlphaShortcut = { fg = c.orange },
-		AlphaHeader = { fg = c.blue },
+		AlphaShortcut = { fg = c.purple, bold = true },
+		AlphaHeader = { fg = c.fg_gutter },
 		AlphaHeaderLabel = { fg = c.orange },
-		AlphaFooter = { fg = c.blue1 },
-		AlphaButtons = { fg = c.cyan },
+		AlphaFooter = { fg = c.fg_gutter },
+		AlphaButtons = { fg = c.blue, bold = true },
 
 		-- WhichKey
 		WhichKey = { fg = c.cyan },
