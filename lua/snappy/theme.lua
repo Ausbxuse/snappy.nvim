@@ -100,10 +100,10 @@ function M.setup()
 		-- default,
 		-- Uncomment and edit if you want more specific syntax highlighting.
 
-		Constant = { fg = c.orange }, -- (preferred) any constant
-		String = { fg = c.cyan }, --   a string constant: "this is a string"
+		Constant = { fg = c.green }, -- (preferred) any constant
+		String = { fg = c.yellow }, --   a string constant: "this is a string"
 		Character = { fg = c.green }, --  a character constant: 'c', '\n'
-		-- Number        = { }, --   a number constant: 234, 0xff
+		Number = { fg = c.purple }, --   a number constant: 234, 0xff
 		-- Boolean       = { }, --  a boolean constant: TRUE, false
 		-- Float         = { }, --    a floating point constant: 2.3e10
 
@@ -214,7 +214,7 @@ function M.setup()
 		["@character"] = { link = "Character" },
 		["@character.special"] = { link = "SpecialChar" },
 		["@comment"] = { link = "Comment" },
-		["@keyword.conditional"] = { link = "Conditional" },
+		["@deyword.conditional"] = { link = "Conditional" },
 		["@constant"] = { link = "Constant" },
 		["@constant.builtin"] = { link = "Special" },
 		["@constant.macro"] = { link = "Define" },
