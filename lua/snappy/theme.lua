@@ -104,7 +104,7 @@ function M.setup()
 		String = { fg = c.yellow }, --   a string constant: "this is a string"
 		Character = { fg = c.green }, --  a character constant: 'c', '\n'
 		Number = { fg = c.purple }, --   a number constant: 234, 0xff
-		Boolean = { fg = c.green, bold = true }, --  a boolean constant: TRUE, false
+		Boolean = { fg = c.green }, --  a boolean constant: TRUE, false
 		-- Float         = { }, --    a floating point constant: 2.3e10
 
 		Identifier = { fg = c.magenta, style = options.styles.variables }, -- (preferred) any variable name
@@ -119,7 +119,7 @@ function M.setup()
 		-- Exception     = { }, --  try, catch, throw
 
 		PreProc = { fg = c.cyan }, -- (preferred) generic Preprocessor
-		-- Include       = { }, --  preprocessor #include
+		Include = { fg = c.green }, --  preprocessor #include
 		-- Define        = { }, --   preprocessor #define
 		-- Macro         = { }, --    same as Define
 		-- PreCondit     = { }, --  preprocessor #if, #else, #endif, etc.
@@ -301,7 +301,7 @@ function M.setup()
 		--- Identifiers
 		["@variable"] = { fg = c.fg, style = options.styles.variables }, -- Any variable name that does not have another highlight.
 		["@variable.builtin"] = { fg = c.fg_dark, bold = true }, -- Variable names that are defined by the languages, like `this` or `self`.
-		["@module.builtin"] = { fg = c.orange }, -- Variable names that are defined by the languages, like `this` or `self`.
+		["@module.builtin"] = { fg = c.green }, -- Variable names that are defined by the languages, like `this` or `self`.
 
 		--- Text
 		-- ["@markup.raw.markdown"] = { fg = c.blue },
