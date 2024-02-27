@@ -5,7 +5,12 @@ local M = {}
 ---@class Palette
 M.default = {
 	none = "NONE",
+<<<<<<< Updated upstream
 	bg_dark = "#1b1e2d",
+=======
+	bg_darker = "#1f2335",
+	bg_dark = "#1f2335",
+>>>>>>> Stashed changes
 	bg = "#1e2233",
 	bg_highlight = "#292e42",
 	terminal_black = "#414868",

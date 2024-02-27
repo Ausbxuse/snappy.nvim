@@ -305,7 +305,7 @@ function M.setup()
 
 		--- Text
 		-- ["@markup.raw.markdown"] = { fg = c.blue },
-		["@markup.raw.markdown_inline"] = { bg = c.terminal_black, fg = c.blue },
+		["@markup.raw.markdown_inline"] = { bg = c.bg_darker, fg = c.fg_gutter, italic = true },
 		["@markup.link"] = { fg = c.teal },
 
 		["@markup.list.unchecked"] = { fg = c.blue }, -- For brackets and parens.
