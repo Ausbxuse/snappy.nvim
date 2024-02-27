@@ -5,7 +5,7 @@ local M = {}
 ---@class Palette
 M.default = {
 	none = "NONE",
-	bg_dark = "#1f2335",
+	bg_dark = "#1b1e2d",
 	bg = "#1e2233",
 	bg_highlight = "#292e42",
 	terminal_black = "#414868",
@@ -23,7 +23,7 @@ M.default = {
 	blue5 = "#89ddff",
 	blue6 = "#b4f9f8",
 	blue7 = "#394b70",
-	magenta = "#fc1a70",
+	magenta = "#e21764",
 	magenta2 = "#ec5f67",
 	purple = "#ae81ff",
 	orange = "#f69c5e",
