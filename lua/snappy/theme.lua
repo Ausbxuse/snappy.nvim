@@ -294,7 +294,7 @@ function M.setup()
 		["@label"] = { fg = c.blue }, -- For labels: `label:` in C and `:label:` in Lua.
 
 		--- Types
-		["@type.builtin"] = { fg = c.cyan, bold = true },
+		["@type.builtin"] = { fg = c.blue, bold = true },
 		["@variable.member"] = { fg = c.cyan }, -- For fields.
 		["@property"] = { fg = c.cyan },
 
@@ -727,7 +727,7 @@ function M.setup()
 		MiniCursorwordCurrent = { bg = c.fg_gutter },
 
 		MiniIndentscopeSymbol = { fg = c.blue1, nocombine = true },
-		MiniIndentscopePrefix = { nocombine = true }, -- Make it invisible
+		MiniIndentscopePrefix = { fg = c.fg_dark, nocombine = true }, -- Make it invisible
 
 		MiniJump = { bg = c.magenta2, fg = "#ffffff" },
 
