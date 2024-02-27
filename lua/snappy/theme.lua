@@ -110,8 +110,8 @@ function M.setup()
 		Identifier = { fg = c.magenta, style = options.styles.variables }, -- (preferred) any variable name
 		Function = { fg = c.blue, style = options.styles.functions }, -- function name (also: methods for classes)
 
-		Statement = { fg = c.magenta }, -- (preferred) any statement
-		Conditional = { bold = false }, --  if, then, else, endif, switch, etc.
+		Statement = { fg = c.green, bold = true }, -- (preferred) any statement
+		Conditional = { fg = c.green, bold = true }, --  if, then, else, endif, switch, etc.
 		Repeat = { fg = c.green }, --   for, do, while, etc.
 		-- Label         = { }, --    case, default, etc.
 		Operator = { fg = c.blue5 }, -- "sizeof", "+", "*", etc.
@@ -129,7 +129,7 @@ function M.setup()
 		-- Structure     = { }, --  struct, union, enum, etc.
 		-- Typedef       = { }, --  A typedef
 
-		Special = { fg = c.purple }, -- (preferred) any special symbol
+		Special = { fg = c.blue }, -- (preferred) any special symbol
 		-- SpecialChar   = { }, --  special character in a constant
 		-- Tag           = { }, --    you can use CTRL-] on this
 		Delimiter = { link = "Special" }, --  character that needs attention
