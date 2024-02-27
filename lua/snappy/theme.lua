@@ -124,7 +124,7 @@ function M.setup()
 		-- Macro         = { }, --    same as Define
 		PreCondit = { fg = c.green }, --  preprocessor #if, #else, #endif, etc.
 
-		Type = { fg = c.blue, bold = true }, -- (preferred) int, long, char, etc.
+		Type = { fg = c.cyan, bold = true }, -- (preferred) int, long, char, etc.
 		-- StorageClass  = { }, -- static, register, volatile, etc.
 		-- Structure     = { }, --  struct, union, enum, etc.
 		-- Typedef       = { }, --  A typedef
