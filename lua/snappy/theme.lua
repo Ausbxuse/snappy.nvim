@@ -300,7 +300,7 @@ function M.setup()
 
 		--- Identifiers
 		["@variable"] = { fg = c.fg, style = options.styles.variables }, -- Any variable name that does not have another highlight.
-		["@variable.builtin"] = { fg = c.fg_dark, bold = true }, -- Variable names that are defined by the languages, like `this` or `self`.
+		["@variable.builtin"] = { fg = c.fg_dark }, -- Variable names that are defined by the languages, like `this` or `self`.
 		["@module.builtin"] = { fg = c.green }, -- Variable names that are defined by the languages, like `this` or `self`.
 
 		--- Text
