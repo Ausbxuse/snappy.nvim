@@ -726,7 +726,7 @@ function M.setup()
 		MiniCursorword = { bg = c.fg_gutter },
 		MiniCursorwordCurrent = { bg = c.fg_gutter },
 
-		MiniIndentscopeSymbol = { fg = c.fg_dark, nocombine = true },
+		MiniIndentscopeSymbol = { fg = c.dark5, nocombine = true },
 		MiniIndentscopePrefix = { nocombine = true }, -- Make it invisible
 
 		MiniJump = { bg = c.magenta2, fg = "#ffffff" },
