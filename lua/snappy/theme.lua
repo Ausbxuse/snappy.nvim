@@ -216,7 +216,7 @@ function M.setup()
 		["@comment"] = { link = "Comment" },
 		["@keyword.conditional"] = { link = "Conditional" },
 		["@constant"] = { link = "Constant" },
-		["@constant.builtin"] = { link = "Special" },
+		["@constant.builtin"] = { link = "Constant" },
 		["@constant.macro"] = { link = "Define" },
 		["@keyword.debug"] = { link = "Debug" },
 		["@keyword.directive.define"] = { link = "Define" },
