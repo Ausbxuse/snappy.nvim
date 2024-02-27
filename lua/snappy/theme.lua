@@ -122,7 +122,7 @@ function M.setup()
 		Include = { fg = c.green }, --  preprocessor #include
 		-- Define        = { }, --   preprocessor #define
 		-- Macro         = { }, --    same as Define
-		-- PreCondit     = { }, --  preprocessor #if, #else, #endif, etc.
+		PreCondit = { fg = c.green }, --  preprocessor #if, #else, #endif, etc.
 
 		Type = { fg = c.cyan, bold = true }, -- (preferred) int, long, char, etc.
 		-- StorageClass  = { }, -- static, register, volatile, etc.
@@ -214,7 +214,7 @@ function M.setup()
 		["@character"] = { link = "Character" },
 		["@character.special"] = { link = "SpecialChar" },
 		["@comment"] = { link = "Comment" },
-		["@deyword.conditional"] = { link = "Conditional" },
+		["@keyword.conditional"] = { link = "Conditional" },
 		["@constant"] = { link = "Constant" },
 		["@constant.builtin"] = { link = "Special" },
 		["@constant.macro"] = { link = "Define" },
@@ -294,7 +294,7 @@ function M.setup()
 		["@label"] = { fg = c.blue }, -- For labels: `label:` in C and `:label:` in Lua.
 
 		--- Types
-		["@type.builtin"] = { fg = c.cyan, bold = true },
+		["@type.builtin"] = { fg = c.blue, bold = true },
 		["@variable.member"] = { fg = c.cyan }, -- For fields.
 		["@property"] = { fg = c.cyan },
 
