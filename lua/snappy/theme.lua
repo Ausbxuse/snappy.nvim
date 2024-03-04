@@ -305,7 +305,7 @@ function M.setup()
 
 		--- Text
 		-- ["@markup.raw.markdown"] = { fg = c.blue },
-		["@markup.raw.markdown_inline"] = { bg = c.bg_darker, fg = c.fg_gutter, italic = true },
+		["@markup.raw.markdown_inline"] = { bg = c.bg_highlight, fg = c.fg_dark, italic = true },
 		["@markup.link"] = { fg = c.teal },
 
 		["@markup.list.unchecked"] = { fg = c.blue }, -- For brackets and parens.
@@ -719,6 +719,8 @@ function M.setup()
 		NotifyINFOBody = { fg = c.fg, bg = options.transparent and c.none or c.bg },
 		NotifyDEBUGBody = { fg = c.fg, bg = options.transparent and c.none or c.bg },
 		NotifyTRACEBody = { fg = c.fg, bg = options.transparent and c.none or c.bg },
+
+		NoNeckPain_background_tab_1_side_left = { bg = c.bg_dark, fg = c.fg },
 
 		-- Mini
 		MiniCompletionActiveParameter = { underline = true },

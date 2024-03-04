@@ -5,12 +5,8 @@ local M = {}
 ---@class Palette
 M.default = {
 	none = "NONE",
-<<<<<<< Updated upstream
+	bg_darker = "#1b1e2d",
 	bg_dark = "#1b1e2d",
-=======
-	bg_darker = "#1f2335",
-	bg_dark = "#1f2335",
->>>>>>> Stashed changes
 	bg = "#1e2233",
 	bg_highlight = "#292e42",
 	terminal_black = "#414868",
@@ -82,7 +78,7 @@ function M.setup(opts)
 	colors.git.ignore = colors.dark3
 	colors.black = util.darken(colors.bg, 0.8, "#000000")
 	colors.border_highlight = util.darken(colors.blue1, 0.8)
-	colors.border = colors.black
+	colors.border = colors.bg_dark
 
 	-- Popups and statusline always get a dark background
 	colors.bg_popup = colors.bg_dark
