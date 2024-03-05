@@ -649,6 +649,7 @@ function M.setup()
 		CmpItemKindTabNine = { fg = c.teal, bg = c.none },
 
 		-- headlines.nvim
+		Headline1 = { bg = c.magenta },
 		CodeBlock = { bg = c.bg_dark },
 
 		-- navic
@@ -829,7 +830,7 @@ function M.setup()
 		end
 	end
 
-	local markdown_rainbow = { c.blue, c.yellow, c.green, c.teal, c.magenta, c.purple }
+	local markdown_rainbow = { c.magenta, c.yellow, c.green, c.cyan, c.blue, c.purple }
 
 	for i, color in ipairs(markdown_rainbow) do
 		theme.highlights["@markup.heading." .. i .. ".markdown"] = { fg = color, bold = true }
