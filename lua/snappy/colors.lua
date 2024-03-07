@@ -27,6 +27,7 @@ M.default = {
 	magenta = "#fc317e",
 	magenta2 = "#ec5f67",
 	purple = "#ae81ff",
+	violet = "#b4befe",
 	orange = "#f69c5e",
 	yellow = "#f4bf75",
 	yellow1 = "#f3f99d",
