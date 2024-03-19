@@ -102,7 +102,7 @@ function M.setup()
 
 		Constant = { fg = c.green }, -- (preferred) any constant
 		String = { fg = c.yellow }, --   a string constant: "this is a string"
-		Character = { fg = c.green }, --  a character constant: 'c', '\n'
+		Character = { fg = c.yellow }, --  a character constant: 'c', '\n'
 		Number = { fg = c.purple }, --   a number constant: 234, 0xff
 		Boolean = { fg = c.green }, --  a boolean constant: TRUE, false
 		-- Float         = { }, --    a floating point constant: 2.3e10
@@ -118,7 +118,7 @@ function M.setup()
 		Keyword = { fg = c.cyan, style = options.styles.keywords }, --  any other keyword
 		-- Exception     = { }, --  try, catch, throw
 
-		PreProc = { fg = c.purple }, -- (preferred) generic Preprocessor
+		PreProc = { fg = c.green }, -- (preferred) generic Preprocessor
 		Include = { fg = c.green }, --  preprocessor #include
 		-- Define        = { }, --   preprocessor #define
 		-- Macro         = { }, --    same as Define
