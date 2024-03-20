@@ -110,7 +110,7 @@ function M.setup()
 		Identifier = { fg = c.magenta, style = options.styles.variables }, -- (preferred) any variable name
 		Function = { fg = c.blue, style = options.styles.functions }, -- function name (also: methods for classes)
 
-		Statement = { fg = c.green }, -- (preferred) any statement
+		Statement = { fg = c.orange }, -- (preferred) any statement
 		Conditional = { fg = c.green }, --  if, then, else, endif, switch, etc.
 		Repeat = { fg = c.green }, --   for, do, while, etc.
 		-- Label         = { }, --    case, default, etc.
