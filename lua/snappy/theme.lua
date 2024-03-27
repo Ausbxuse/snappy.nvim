@@ -457,9 +457,22 @@ function M.setup()
 		GitSignsChange = { fg = c.gitSigns.change }, -- diff mode: Changed line |diff.txt|
 		GitSignsDelete = { fg = c.gitSigns.delete }, -- diff mode: Deleted line |diff.txt|
 
-		-- Telescope
-		TelescopeBorder = { fg = c.border_highlight, bg = c.bg_float },
-		TelescopeNormal = { fg = c.fg, bg = c.bg_float },
+		--[[ -- Telescope
+		TelescopeBorder = { fg = c.border_highlight, bg = c.bg_1 },
+		-- TelescopeNormal = { fg = c.fg, bg = c.bg_float },
+		TelescopeNormal = { fg = c.fg, bg = c.bg_1 },
+  TelescopeSelection    = {                        bg =  c.bg_2},
+ ]]
+		-- TODO: more ricing
+		TelescopeBorder = { fg = c.bg_1, bg = c.bg_1 },
+		TelescopePromptBorder = { fg = c.bg_2, bg = c.bg_2 },
+		TelescopePromptNormal = { fg = c.fg, bg = c.bg_2 },
+		TelescopePromptPrefix = { fg = c.magenta, bg = c.bg_2 },
+		TelescopeNormal = { bg = c.bg_1 },
+		TelescopePreviewTitle = { fg = c.bg_3, bg = c.green },
+		TelescopePromptTitle = { fg = c.bg_1, bg = c.magenta },
+		TelescopeResultsTitle = { fg = c.bg_1, bg = c.bg_1 },
+		TelescopeSelection = { bg = c.bg_2 },
 
 		-- NvimTree
 		NvimTreeNormal = { fg = c.fg_sidebar, bg = c.bg_sidebar },
@@ -777,6 +790,11 @@ function M.setup()
 		-- Noice
 
 		NoiceCompletionItemKindDefault = { fg = c.fg_dark, bg = c.none },
+		-- BUG: can't use transparent background
+		-- NoiceMini = { bg = c.bg },
+		-- NoiceLspProgressSpinner = { bg = c.bg },
+		-- NoiceLspProgressClient = { bg = c.bg },
+		-- NoiceLspProgressTitle = { bg = c.bg },
 
 		TreesitterContext = { bg = util.darken(c.fg_gutter, 0.8) },
 		Hlargs = { fg = c.yellow },
