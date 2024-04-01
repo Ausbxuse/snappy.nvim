@@ -229,7 +229,7 @@ function M.setup()
 		["@keyword.import"] = { link = "Include" },
 		["@keyword.coroutine"] = { link = "@keyword" },
 		["@keyword.operator"] = { link = "@operator" },
-		["@keyword.return"] = { link = "@keyword" },
+		["@keyword.return"] = { fg = c.magenta, bold = true },
 		["@function.method"] = { link = "Function" },
 		["@function.method.call"] = { link = "@function.method" },
 		["@namespace.builtin"] = { link = "@variable.builtin" },
@@ -288,7 +288,7 @@ function M.setup()
 		["@variable.parameter.builtin"] = { fg = util.lighten(c.yellow, 0.8) }, -- For builtin parameters of a function, e.g. "..." or Smali's p[1-99]
 
 		--- Keywords
-		["@keyword"] = { fg = c.magenta, style = options.styles.keywords }, -- For keywords that don't fall in previous categories.
+		["@keyword"] = { fg = c.cyan, style = options.styles.keywords }, -- For keywords that don't fall in previous categories.
 		["@keyword.function"] = { fg = c.magenta, style = options.styles.functions }, -- For keywords used to define a fuction.
 
 		["@label"] = { fg = c.blue }, -- For labels: `label:` in C and `:label:` in Lua.
@@ -305,7 +305,7 @@ function M.setup()
 
 		--- Text
 		-- ["@markup.raw.markdown"] = { fg = c.blue },
-		["@markup.raw.markdown_inline"] = { bg = c.bg_highlight, fg = c.fg_dark, italic = true },
+		["@markup.raw.markdown_inline"] = { bg = c.bg_highlight, fg = c.fg_dark },
 		["@markup.link"] = { fg = c.teal },
 
 		["@markup.list.unchecked"] = { fg = c.blue }, -- For brackets and parens.
