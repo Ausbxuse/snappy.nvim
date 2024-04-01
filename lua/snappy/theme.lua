@@ -464,7 +464,7 @@ function M.setup()
   TelescopeSelection    = {                        bg =  c.bg_2},
  ]]
 		-- TODO: more ricing
-		TelescopeBorder = { fg = c.bg_1, bg = c.bg_1 },
+		--[[ TelescopeBorder = { fg = c.bg_1, bg = c.bg_1 },
 		TelescopePromptBorder = { fg = c.bg_2, bg = c.bg_2 },
 		TelescopePromptNormal = { fg = c.fg, bg = c.bg_2 },
 		TelescopePromptPrefix = { fg = c.magenta, bg = c.bg_2 },
@@ -472,7 +472,7 @@ function M.setup()
 		TelescopePreviewTitle = { fg = c.bg_3, bg = c.green },
 		TelescopePromptTitle = { fg = c.bg_1, bg = c.magenta },
 		TelescopeResultsTitle = { fg = c.bg_1, bg = c.bg_1 },
-		TelescopeSelection = { bg = c.bg_2 },
+		TelescopeSelection = { bg = c.bg_2 }, ]]
 
 		-- NvimTree
 		NvimTreeNormal = { fg = c.fg_sidebar, bg = c.bg_sidebar },
