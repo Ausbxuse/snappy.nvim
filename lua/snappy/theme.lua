@@ -36,6 +36,8 @@ function M.setup()
 		CursorIM = { fg = c.bg, bg = c.fg }, -- like Cursor, but used when in IME mode |CursorIM|
 		CursorColumn = { bg = c.bg_highlight }, -- Screen-column at the cursor, when 'cursorcolumn' is set.
 		CursorLine = { bg = c.bg_highlight }, -- Screen-line at the cursor, when 'cursorline' is set.  Low-priority if foreground (ctermfg OR guifg) is not set.
+		LineNr = { fg = c.dark3 }, -- Line number for ":number" and ":#" commands, and when 'number' or 'relativenumber' option is set.
+		CursorLineNr = { fg = c.fg_dark }, -- Like LineNr when 'cursorline' or 'relativenumber' is set for the cursor line.
 		Directory = { fg = c.blue }, -- directory names (and other special names in listings)
 		DiffAdd = { bg = c.diff.add }, -- diff mode: Added line |diff.txt|
 		DiffChange = { bg = c.diff.change }, -- diff mode: Changed line |diff.txt|
@@ -52,8 +54,6 @@ function M.setup()
 		SignColumn = { bg = options.transparent and c.none or c.bg, fg = c.fg_gutter }, -- column where |signs| are displayed
 		SignColumnSB = { bg = c.bg_sidebar, fg = c.fg_gutter }, -- column where |signs| are displayed
 		Substitute = { bg = c.red, fg = c.black }, -- |:substitute| replacement text highlighting
-		LineNr = { fg = c.fg_gutter }, -- Line number for ":number" and ":#" commands, and when 'number' or 'relativenumber' option is set.
-		CursorLineNr = { fg = c.dark5 }, -- Like LineNr when 'cursorline' or 'relativenumber' is set for the cursor line.
 		MatchParen = { fg = c.yellow1, bold = true }, -- The character under the cursor or just before it, if it is a paired bracket, and its match. |pi_paren.txt|
 		ModeMsg = { fg = c.fg_dark, bold = true }, -- 'showmode' message (e.g., "-- INSERT -- ")
 		MsgArea = { fg = c.fg_dark }, -- Area for messages and cmdline
