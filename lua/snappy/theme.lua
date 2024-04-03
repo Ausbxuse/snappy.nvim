@@ -115,7 +115,7 @@ function M.setup()
 		Repeat = { fg = c.green }, --   for, do, while, etc.
 		-- Label         = { }, --    case, default, etc.
 		Operator = { fg = c.blue5 }, -- "sizeof", "+", "*", etc.
-		Keyword = { fg = c.cyan, style = options.styles.keywords }, --  any other keyword
+		Keyword = { fg = c.magenta, style = options.styles.keywords }, --  any other keyword
 		-- Exception     = { }, --  try, catch, throw
 
 		PreProc = { fg = c.green }, -- (preferred) generic Preprocessor
@@ -229,7 +229,7 @@ function M.setup()
 		["@keyword.import"] = { link = "Include" },
 		["@keyword.coroutine"] = { link = "@keyword" },
 		["@keyword.operator"] = { link = "@operator" },
-		["@keyword.return"] = { fg = c.magenta, bold = true },
+		["@keyword.return"] = { fg = c.magenta, bold = true, italic = true },
 		["@function.method"] = { link = "Function" },
 		["@function.method.call"] = { link = "@function.method" },
 		["@namespace.builtin"] = { link = "@variable.builtin" },
