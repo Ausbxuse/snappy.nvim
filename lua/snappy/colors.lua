@@ -65,6 +65,8 @@ function M.setup(opts)
 		palette = palette()
 	end
 
+	vim.fn.expand("$home")
+
 	-- Color Palette
 	---@class ColorScheme: Palette
 	local colors = vim.tbl_deep_extend("force", vim.deepcopy(M.default), palette)

@@ -107,11 +107,11 @@ function M.setup()
 		Boolean = { fg = c.green }, --  a boolean constant: TRUE, false
 		-- Float         = { }, --    a floating point constant: 2.3e10
 
-		Identifier = { fg = c.magenta, style = options.styles.variables }, -- (preferred) any variable name
+		Identifier = { fg = c.magenta, style = options.styles.variables, italic = true }, -- (preferred) any variable name
 		Function = { fg = c.blue, style = options.styles.functions }, -- function name (also: methods for classes)
 
 		Statement = { fg = c.orange }, -- (preferred) any statement
-		Conditional = { fg = c.green }, --  if, then, else, endif, switch, etc.
+		Conditional = { fg = c.green, bold = true }, --  if, then, else, endif, switch, etc.
 		Repeat = { fg = c.green }, --   for, do, while, etc.
 		-- Label         = { }, --    case, default, etc.
 		Operator = { fg = c.blue5 }, -- "sizeof", "+", "*", etc.
@@ -214,9 +214,9 @@ function M.setup()
 		["@character"] = { link = "Character" },
 		["@character.special"] = { link = "SpecialChar" },
 		["@comment"] = { link = "Comment" },
-		["@keyword.conditional"] = { link = "Conditional" },
+		["@keyword.conditional"] = { link = "Conditional", bold = true },
 		["@constant"] = { link = "Constant" },
-		["@constant.builtin"] = { link = "Constant" },
+		["@constant.builtin"] = { link = "Constant", bold = true },
 		["@constant.macro"] = { link = "Define" },
 		["@keyword.debug"] = { link = "Debug" },
 		["@keyword.directive.define"] = { link = "Define" },
@@ -268,7 +268,7 @@ function M.setup()
 		--- Misc
 		-- TODO:
 		-- ["@comment.documentation"] = { },
-		["@operator"] = { fg = c.magenta }, -- For any operator: `+`, but also `->` and `*` in C.
+		["@operator"] = { fg = c.magenta, bold = true }, -- For any operator: `+`, but also `->` and `*` in C.
 
 		--- Punctuation
 		["@punctuation.delimiter"] = { fg = c.blue5 }, -- For delimiters ie: `.`
@@ -296,7 +296,7 @@ function M.setup()
 		--- Types
 		["@type.builtin"] = { fg = c.cyan, bold = true },
 		["@variable.member"] = { fg = c.cyan }, -- For fields.
-		["@property"] = { fg = c.cyan },
+		["@property"] = { fg = c.cyan, italic = true },
 
 		--- Identifiers
 		["@variable"] = { fg = c.fg, style = options.styles.variables }, -- Any variable name that does not have another highlight.
@@ -315,7 +315,7 @@ function M.setup()
 		["@diff.minus"] = { link = "DiffDelete" },
 		["@diff.delta"] = { link = "DiffChange" },
 
-		["@module"] = { link = "Include" },
+		["@module"] = { link = "Include", italic = true },
 
 		-- tsx
 		["@tag.tsx"] = { fg = c.red },
@@ -796,7 +796,7 @@ function M.setup()
 		-- NoiceLspProgressClient = { bg = c.bg },
 		-- NoiceLspProgressTitle = { bg = c.bg },
 
-		TreesitterContext = { bg = util.darken(c.fg_gutter, 0.8) },
+		TreesitterContextBottom = { bg = options.transparent and c.none or c.bg, underline = true },
 		Hlargs = { fg = c.yellow },
 		-- TreesitterContext = { bg = util.darken(c.bg_visual, 0.4) },
 	}
