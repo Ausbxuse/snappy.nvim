@@ -672,7 +672,7 @@ function M.setup()
 
     AerialNormal = { fg = c.fg, bg = c.none },
     AerialGuide = { fg = c.fg_gutter },
-    AerialLine = { link = "LspInlayHint" },
+    AerialLine = { fg = c.fg, bg = c.bg_highlight },
 
     IndentBlanklineChar = { fg = c.fg_gutter, nocombine = true },
     IndentBlanklineContextChar = { fg = c.purple, nocombine = true },
