@@ -2,6 +2,7 @@ local util = require("snappy.util")
 local colors = require("snappy.colors")
 
 local M = {}
+--
 ---@class Highlight
 ---@field fg string|nil
 ---@field bg string|nil
@@ -10,8 +11,8 @@ local M = {}
 ---@field link string|nil
 
 ---@alias Highlights table<string,Highlight>
----@return Theme
 
+---@return Theme
 function M.setup()
   local config = require("snappy.config")
   local options = config.options
