@@ -2,6 +2,27 @@ local util = require("snappy.util")
 
 local M = {}
 
+      --[[ local colors = {
+        _nc = '#16141f',
+        base = '#191724',
+        surface = '#1f1d2e',
+        overlay = '#26233a',
+        muted = '#6e6a86',
+        subtle = '#908caa',
+        text = '#e0def4',
+        magenta = '#fc317e',
+        orange = '#f69c5e',
+        yellow = '#f6c177',
+        green = '#9cce6a',
+        blue = '#4fc1ff',
+        cyan = '#62d8f1',
+        cyan2 = '#89ddff',
+        purple = '#bd93f9',
+        highlight_low = '#21202e',
+        highlight_med = '#403d52',
+        highlight_high = '#524f67',
+        none = 'NONE',
+      } ]]
 ---@class Palette
 M.default = {
   none = "NONE",

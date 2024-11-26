@@ -457,16 +457,35 @@ function M.setup()
 		GitSignsChange = { fg = c.gitSigns.change }, -- diff mode: Changed line |diff.txt|
 		GitSignsDelete = { fg = c.gitSigns.delete }, -- diff mode: Deleted line |diff.txt|
 
-		--[[ -- Telescope
-		TelescopeBorder = { fg = c.border_highlight, bg = c.bg_1 },
-		-- TelescopeNormal = { fg = c.fg, bg = c.bg_float },
-		TelescopeNormal = { fg = c.fg, bg = c.bg_1 },
-  TelescopeSelection    = {                        bg =  c.bg_2},
- ]]
+		-- Telescope
+	  TelescopeSelection    = {  bg =  c.fg_gutter},
+	  TelescopeMatching    = {  fg =  c.orange, bold = true},
+
+		TelescopePromptTitle = { fg = c.bg_dark, bg = c.red, bold =true },
+		TelescopePreviewTitle = { fg = c.bg_dark, bg = c.green, bold =true },
+
+		TelescopeNormal = {
+			bg = c.bg_dark,
+			fg = c.fg_dark,
+		},
+		TelescopeBorder = {
+			bg = c.bg_dark,
+			fg = c.bg_dark,
+		},
+		TelescopePromptNormal = {
+			bg = '#2d3149',
+		},
+		TelescopePromptBorder = {
+			bg = '#2d3149',
+			fg = '#2d3149',
+		},
+		TelescopeResultsTitle = {
+			bg = c.bg_dark,
+			fg = c.bg_dark,
+		},
 		-- TODO: more ricing
 		--[[ TelescopeBorder = { fg = c.bg_1, bg = c.bg_1 },
 		TelescopePromptBorder = { fg = c.bg_2, bg = c.bg_2 },
-		TelescopePromptNormal = { fg = c.fg, bg = c.bg_2 },
 		TelescopePromptPrefix = { fg = c.magenta, bg = c.bg_2 },
 		TelescopeNormal = { bg = c.bg_1 },
 		TelescopePreviewTitle = { fg = c.bg_3, bg = c.green },
@@ -496,6 +515,19 @@ function M.setup()
 		NeoTreeNormal = { fg = c.fg_sidebar, bg = c.bg_sidebar },
 		NeoTreeNormalNC = { fg = c.fg_sidebar, bg = c.bg_sidebar },
 		NeoTreeDimText = { fg = c.fg_gutter },
+
+		netrwCompress = { fg=c.green,   bg=c.black},
+		netrwData = {	  fg=c.blue, bg=c.black},
+		netrwHdr = {	  fg=c.green},
+		netrwLex = {	  fg=c.green},
+		netrwYacc = {	  fg=c.green},
+		netrwLib = {	   fg=c.yellow},
+		netrwObj = {	   fg=c.red},
+		netrwTilde = {	   fg=c.red},
+		netrwTmp = {	   fg=c.red},
+		netrwTags = {	   fg=c.red},
+		netrwDoc = {	   fg=c.yellow, bg=c.blue},
+		netrwSymLink = {   fg=c.bg_2},
 
 		-- Fern
 		FernBranchText = { fg = c.blue },
