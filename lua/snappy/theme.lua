@@ -529,7 +529,8 @@ function M.setup()
 		SnacksDashboardFooter = { fg = c.yellow1 },
 		SnacksDashboardTitle = { fg = c.orange },
 		SnacksDashboardNormal = { fg = c.yellow },
-		SnacksDashboardDesc = { fg = c.blue },
+		SnacksDashboardDesc = { fg = c.blue, bold = true },
+		SnacksDashboardIcon = { fg = c.blue, bold = true },
 
 		-- WhichKey
 		WhichKey = { fg = c.cyan },
