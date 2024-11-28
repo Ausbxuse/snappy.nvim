@@ -457,6 +457,8 @@ function M.setup()
 		GitSignsChange = { fg = c.gitSigns.change }, -- diff mode: Changed line |diff.txt|
 		GitSignsDelete = { fg = c.gitSigns.delete }, -- diff mode: Deleted line |diff.txt|
 
+		DropBarMenuNormalFloat = { link = "Pmenu"},
+		DropBarMenuHoverEntry = { link = "IncSearch", reverse = true},
 		-- Telescope
 	  TelescopeSelection    = {  bg =  c.fg_gutter},
 	  TelescopeMatching    = {  fg =  c.orange, bold = true},
