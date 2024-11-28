@@ -164,6 +164,12 @@ function M.setup()
 		markdownH1 = { fg = c.magenta, bold = true },
 		markdownH2 = { fg = c.blue, bold = true },
 		markdownLinkText = { fg = c.blue, underline = true },
+		RenderMarkdownH1bg = { link="Headline1" },
+		RenderMarkdownH2bg = { link="Headline2" },
+		RenderMarkdownH3bg = { link="Headline3" },
+		RenderMarkdownH4bg = { link="Headline4" },
+		RenderMarkdownH5bg = { link="Headline5" },
+		RenderMarkdownH6bg = { link="Headline6" },
 
 		["helpCommand"] = { bg = c.terminal_black, fg = c.blue },
 
