@@ -164,12 +164,29 @@ function M.setup()
 		markdownH1 = { fg = c.magenta, bold = true },
 		markdownH2 = { fg = c.blue, bold = true },
 		markdownLinkText = { fg = c.blue, underline = true },
-		RenderMarkdownH1bg = { link="Headline1" },
-		RenderMarkdownH2bg = { link="Headline2" },
-		RenderMarkdownH3bg = { link="Headline3" },
-		RenderMarkdownH4bg = { link="Headline4" },
-		RenderMarkdownH5bg = { link="Headline5" },
-		RenderMarkdownH6bg = { link="Headline6" },
+		--[[ MarkviewHeading1 = { link="Headline1" },
+		MarkviewHeading2 = { link="Headline2" },
+		MarkviewHeading3 = { link="Headline3" },
+		MarkviewHeading4 = { link="Headline4" },
+		MarkviewHeading5 = { link="Headline5" },
+		MarkviewHeading6 = { link="Headline6" },
+		MarkviewIcon1 = { link="Headline1" },
+		MarkviewIcon2 = { link="Headline2" },
+		MarkviewIcon3 = { link="Headline3" },
+		MarkviewIcon4 = { link="Headline4" },
+		MarkviewIcon5 = { link="Headline5" },
+		MarkviewIcon6 = { link="Headline6" }, ]]
+		MarkviewCheckboxChecked =  { bold = true, fg = "#89ddff" },
+		MarkviewCheckboxUnchecked = { bold = true, fg = "#f78c6c" },
+		MarkviewCheckboxPending = { bold = true, fg = "#ff5370" },
+		--[[ ObsidianRightArrow = { bold = true, fg = "#f78c6c" },
+		ObsidianTilde = { bold = true, fg = "#ff5370" },
+		ObsidianBullet = { bold = true, fg = "#89ddff" },
+		ObsidianRefText = { underline = true, fg = "#c792ea" },
+		ObsidianExtLinkIcon = { fg = "#c792ea" },
+		ObsidianTag = { italic = true, fg = "#89ddff" },
+		ObsidianBlockID = { italic = true, fg = "#89ddff" },
+		ObsidianHighlightText = { bg = "#75662e" }, ]]
 
 		["helpCommand"] = { bg = c.terminal_black, fg = c.blue },
 
@@ -203,7 +220,7 @@ function M.setup()
 
 		LspSignatureActiveParameter = { bg = util.darken(c.bg_visual, 0.4), bold = true },
 		LspCodeLens = { fg = c.comment },
-		LspInlayHint = { bg = util.darken(c.blue7, 0.1), fg = c.dark3 },
+		LspInlayHint = { bg = options.transparent and c.none or util.darken(c.blue7, 0.1), fg = c.dark5 },
 
 		LspInfoBorder = { fg = c.border_highlight, bg = c.bg_float },
 
