@@ -176,7 +176,7 @@ function M.setup()
 		MarkviewIcon4 = { link="Headline4" },
 		MarkviewIcon5 = { link="Headline5" },
 		MarkviewIcon6 = { link="Headline6" }, ]]
-		MarkviewCheckboxChecked =  { bold = true, fg = "#89ddff" },
+		MarkviewCheckboxChecked = { bold = true, fg = "#89ddff" },
 		MarkviewCheckboxUnchecked = { bold = true, fg = "#f78c6c" },
 		MarkviewCheckboxPending = { bold = true, fg = "#ff5370" },
 		--[[ ObsidianRightArrow = { bold = true, fg = "#f78c6c" },
@@ -480,14 +480,14 @@ function M.setup()
 		GitSignsChange = { fg = c.gitSigns.change }, -- diff mode: Changed line |diff.txt|
 		GitSignsDelete = { fg = c.gitSigns.delete }, -- diff mode: Deleted line |diff.txt|
 
-		DropBarMenuNormalFloat = { link = "Pmenu"},
-		DropBarMenuHoverEntry = { link = "IncSearch", reverse = true},
+		DropBarMenuNormalFloat = { link = "Pmenu" },
+		DropBarMenuHoverEntry = { link = "IncSearch", reverse = true },
 		-- Telescope
-	  TelescopeSelection    = {  bg =  c.fg_gutter},
-	  TelescopeMatching    = {  fg =  c.orange, bold = true},
+		TelescopeSelection = { bg = c.fg_gutter },
+		TelescopeMatching = { fg = c.orange, bold = true },
 
-		TelescopePromptTitle = { fg = c.bg_dark, bg = c.red, bold =true },
-		TelescopePreviewTitle = { fg = c.bg_dark, bg = c.green, bold =true },
+		TelescopePromptTitle = { fg = c.bg_dark, bg = c.red, bold = true },
+		TelescopePreviewTitle = { fg = c.bg_dark, bg = c.green, bold = true },
 
 		TelescopeNormal = {
 			bg = c.bg_dark,
@@ -498,11 +498,11 @@ function M.setup()
 			fg = c.bg_dark,
 		},
 		TelescopePromptNormal = {
-			bg = '#2d3149',
+			bg = "#2d3149",
 		},
 		TelescopePromptBorder = {
-			bg = '#2d3149',
-			fg = '#2d3149',
+			bg = "#2d3149",
+			fg = "#2d3149",
 		},
 		TelescopeResultsTitle = {
 			bg = c.bg_dark,
@@ -541,18 +541,18 @@ function M.setup()
 		NeoTreeNormalNC = { fg = c.fg_sidebar, bg = c.bg_sidebar },
 		NeoTreeDimText = { fg = c.fg_gutter },
 
-		netrwCompress = { fg=c.green,   bg=c.black},
-		netrwData = {	  fg=c.blue, bg=c.black},
-		netrwHdr = {	  fg=c.green},
-		netrwLex = {	  fg=c.green},
-		netrwYacc = {	  fg=c.green},
-		netrwLib = {	   fg=c.yellow},
-		netrwObj = {	   fg=c.red},
-		netrwTilde = {	   fg=c.red},
-		netrwTmp = {	   fg=c.red},
-		netrwTags = {	   fg=c.red},
-		netrwDoc = {	   fg=c.yellow, bg=c.blue},
-		netrwSymLink = {   fg=c.bg_2},
+		netrwCompress = { fg = c.green, bg = c.black },
+		netrwData = { fg = c.blue, bg = c.black },
+		netrwHdr = { fg = c.green },
+		netrwLex = { fg = c.green },
+		netrwYacc = { fg = c.green },
+		netrwLib = { fg = c.yellow },
+		netrwObj = { fg = c.red },
+		netrwTilde = { fg = c.red },
+		netrwTmp = { fg = c.red },
+		netrwTags = { fg = c.red },
+		netrwDoc = { fg = c.yellow, bg = c.blue },
+		netrwSymLink = { fg = c.bg_2 },
 
 		-- Fern
 		FernBranchText = { fg = c.blue },
@@ -940,20 +940,15 @@ function M.setup()
 	---@type table<string, table>
 	theme.defer = {}
 
-	if options.hide_inactive_statusline then
-		local inactive = { underline = true, bg = c.none, fg = c.bg, sp = c.border }
-
-		-- StatusLineNC
-		theme.highlights.StatusLineNC = inactive
-
-		-- LuaLine
-		for _, section in ipairs({ "a", "b", "c" }) do
-			theme.defer["lualine_" .. section .. "_inactive"] = inactive
-		end
-
-		-- mini.statusline
-		theme.highlights.MiniStatuslineInactive = inactive
+	local inactive = { underline = true, bg = c.none, fg = c.fg_dark, sp = c.border }
+	-- StatusLineNC
+	theme.highlights.StatusLineNC = inactive
+	-- LuaLine
+	for _, section in ipairs({ "a", "b", "c" }) do
+		theme.defer["lualine_" .. section .. "_inactive"] = inactive
 	end
+	-- mini.statusline
+	theme.highlights.MiniStatuslineInactive = inactive
 
 	options.on_highlights(theme.highlights, theme.colors)
 
