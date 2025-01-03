@@ -484,21 +484,25 @@ function M.setup()
 		DropBarMenuHoverEntry = { link = "IncSearch", reverse = true },
 		-- Telescope
 		TelescopeSelection = { bg = c.fg_gutter },
-		TelescopeMatching = { fg = c.orange, bold = true },
+		FzfLuaFzfMatch = { fg = c.orange, bold = true },
 
-		TelescopePromptTitle = { fg = c.bg_dark, bg = c.red, bold = true },
-		TelescopePreviewTitle = { fg = c.bg_dark, bg = c.green, bold = true },
+		FzfLuaScrollBorderFull = { fg = c.fg_gutter },
 
-		TelescopeNormal = {
+		FzfLuaPreviewTitle = { fg = c.bg_dark, bg = c.green, bold = true },
+		FzfLuaFzfScrollbar = { bg = c.bg_highlight }, -- does not work
+
+		--[[ FzfLuaNormal = {
 			bg = c.bg_dark,
 			fg = c.fg_dark,
 		},
-		TelescopeBorder = {
+		FzfLuaBorder = {
 			bg = c.bg_dark,
 			fg = c.bg_dark,
-		},
-		TelescopePromptNormal = {
-			bg = "#2d3149",
+		}, ]]
+		FzfLuaFzfPrompt = {
+			fg = c.bg_dark,
+			bg = c.red,
+			bold = true,
 		},
 		TelescopePromptBorder = {
 			bg = "#2d3149",
@@ -508,16 +512,6 @@ function M.setup()
 			bg = c.bg_dark,
 			fg = c.bg_dark,
 		},
-		-- TODO: more ricing
-		--[[ TelescopeBorder = { fg = c.bg_1, bg = c.bg_1 },
-		TelescopePromptBorder = { fg = c.bg_2, bg = c.bg_2 },
-		TelescopePromptPrefix = { fg = c.magenta, bg = c.bg_2 },
-		TelescopeNormal = { bg = c.bg_1 },
-		TelescopePreviewTitle = { fg = c.bg_3, bg = c.green },
-		TelescopePromptTitle = { fg = c.bg_1, bg = c.magenta },
-		TelescopeResultsTitle = { fg = c.bg_1, bg = c.bg_1 },
-		TelescopeSelection = { bg = c.bg_2 }, ]]
-
 		-- NvimTree
 		NvimTreeNormal = { fg = c.fg_sidebar, bg = c.bg_sidebar },
 		NvimTreeWinSeparator = {
