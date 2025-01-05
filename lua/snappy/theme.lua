@@ -79,7 +79,7 @@ function M.setup()
 		SpellCap = { sp = c.warning, undercurl = true }, -- Word that should start with a capital. |spell| Combined with the highlighting used otherwise.
 		SpellLocal = { sp = c.info, undercurl = true }, -- Word that is recognized by the spellchecker as one that is used in another region. |spell| Combined with the highlighting used otherwise.
 		SpellRare = { sp = c.hint, undercurl = true }, -- Word that is recognized by the spellchecker as one that is hardly ever used.  |spell| Combined with the highlighting used otherwise.
-		StatusLine = { fg = c.fg_sidebar, bg = c.bg_statusline }, -- status line of current window
+		StatusLine = { fg = c.fg, bg = c.bg_statusline, bold = true }, -- status line of current window
 		StatusLineNC = { fg = c.fg_gutter, bg = c.bg_statusline }, -- status lines of not-current windows Note: if this is equal to "StatusLine" Vim will use "^^^" in the status line of the current window.
 		TabLine = { bg = c.bg_statusline, fg = c.fg_gutter }, -- tab pages line, not active tab page label
 		TabLineFill = { bg = c.black }, -- tab pages line, where there are no labels
@@ -485,6 +485,9 @@ function M.setup()
 		-- Telescope
 		TelescopeSelection = { bg = c.fg_gutter },
 		FzfLuaFzfMatch = { fg = c.orange, bold = true },
+		FzfLuaNormal = { fg = c.fg, bg = c.bg_dark },
+		FzfLuaBorder = { fg = c.fg, bg = c.bg_dark },
+		FzfLuaBackdrop = { bg = c.bg_dark },
 
 		FzfLuaScrollBorderFull = { fg = c.fg_gutter },
 
