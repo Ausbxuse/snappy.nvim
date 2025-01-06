@@ -937,7 +937,7 @@ function M.setup()
 	---@type table<string, table>
 	theme.defer = {}
 
-	local inactive = { underline = true, bg = c.none, fg = c.fg_dark, sp = c.border }
+	local inactive = { bg = c.none, fg = c.fg_dark, sp = c.border }
 	-- StatusLineNC
 	theme.highlights.StatusLineNC = inactive
 	-- LuaLine
