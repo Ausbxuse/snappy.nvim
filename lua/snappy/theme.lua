@@ -390,44 +390,10 @@ function M.setup()
 		-- NOTE: maybe add these with distinct highlights?
 		-- ["@lsp.typemod.variable.globalScope"] (global variables)
 
-		-- ts-rainbow
-		rainbowcol1 = { fg = c.red },
-		rainbowcol2 = { fg = c.yellow },
-		rainbowcol3 = { fg = c.green },
-		rainbowcol4 = { fg = c.teal },
-		rainbowcol5 = { fg = c.blue },
-		rainbowcol6 = { fg = c.magenta },
-		rainbowcol7 = { fg = c.purple },
-
-		-- ts-rainbow2 (maintained fork)
-		TSRainbowRed = { fg = c.red },
-		TSRainbowOrange = { fg = c.orange },
-		TSRainbowYellow = { fg = c.yellow },
-		TSRainbowGreen = { fg = c.green },
-		TSRainbowBlue = { fg = c.blue },
-		TSRainbowViolet = { fg = c.purple },
-		TSRainbowCyan = { fg = c.cyan },
-
-		-- rainbow-delimiters
-		RainbowDelimiterRed = { fg = c.red },
-		RainbowDelimiterOrange = { fg = c.orange },
-		RainbowDelimiterYellow = { fg = c.yellow },
-		RainbowDelimiterGreen = { fg = c.green },
-		RainbowDelimiterBlue = { fg = c.blue },
-		RainbowDelimiterViolet = { fg = c.purple },
-		RainbowDelimiterCyan = { fg = c.cyan },
-
 		-- LspTrouble
 		TroubleText = { fg = c.fg_dark },
 		TroubleCount = { fg = c.magenta, bg = c.fg_gutter },
 		TroubleNormal = { fg = c.fg, bg = c.bg_sidebar },
-
-		-- Illuminate
-		illuminatedWord = { bg = c.fg_gutter },
-		illuminatedCurWord = { bg = c.fg_gutter },
-		IlluminatedWordText = { bg = c.fg_gutter },
-		IlluminatedWordRead = { bg = c.fg_gutter },
-		IlluminatedWordWrite = { bg = c.fg_gutter },
 
 		-- diff
 		diffAdded = { fg = c.git.add },
@@ -482,8 +448,7 @@ function M.setup()
 
 		DropBarMenuNormalFloat = { link = "Pmenu" },
 		DropBarMenuHoverEntry = { link = "IncSearch", reverse = true },
-		-- Telescope
-		TelescopeSelection = { bg = c.fg_gutter },
+		-- Fzflua
 		FzfLuaFzfMatch = { fg = c.orange, bold = true },
 		FzfLuaNormal = { fg = c.fg, bg = c.bg_dark },
 		FzfLuaBorder = { fg = c.fg, bg = c.bg_dark },
@@ -507,36 +472,6 @@ function M.setup()
 			bg = c.red,
 			bold = true,
 		},
-		TelescopePromptBorder = {
-			bg = "#2d3149",
-			fg = "#2d3149",
-		},
-		TelescopeResultsTitle = {
-			bg = c.bg_dark,
-			fg = c.bg_dark,
-		},
-		-- NvimTree
-		NvimTreeNormal = { fg = c.fg_sidebar, bg = c.bg_sidebar },
-		NvimTreeWinSeparator = {
-			fg = options.styles.sidebars == "transparent" and c.border or c.bg_sidebar,
-			bg = c.bg_sidebar,
-		},
-		NvimTreeNormalNC = { fg = c.fg_sidebar, bg = c.bg_sidebar },
-		NvimTreeRootFolder = { fg = c.blue, bold = true },
-		NvimTreeGitDirty = { fg = c.git.change },
-		NvimTreeGitNew = { fg = c.git.add },
-		NvimTreeGitDeleted = { fg = c.git.delete },
-		NvimTreeOpenedFile = { bg = c.bg_highlight },
-		NvimTreeSpecialFile = { fg = c.purple, underline = true },
-		NvimTreeIndentMarker = { fg = c.fg_gutter },
-		NvimTreeImageFile = { fg = c.fg_sidebar },
-		NvimTreeSymlink = { fg = c.blue },
-		NvimTreeFolderIcon = { bg = c.none, fg = c.blue },
-		-- NvimTreeFolderName= { fg = c.fg_float },
-
-		NeoTreeNormal = { fg = c.fg_sidebar, bg = c.bg_sidebar },
-		NeoTreeNormalNC = { fg = c.fg_sidebar, bg = c.bg_sidebar },
-		NeoTreeDimText = { fg = c.fg_gutter },
 
 		netrwCompress = { fg = c.green, bg = c.black },
 		netrwData = { fg = c.blue, bg = c.black },
@@ -551,41 +486,6 @@ function M.setup()
 		netrwDoc = { fg = c.yellow, bg = c.blue },
 		netrwSymLink = { fg = c.bg_2 },
 
-		-- Fern
-		FernBranchText = { fg = c.blue },
-
-		-- glyph palette
-		GlyphPalette1 = { fg = c.red1 },
-		GlyphPalette2 = { fg = c.green },
-		GlyphPalette3 = { fg = c.yellow },
-		GlyphPalette4 = { fg = c.blue },
-		GlyphPalette6 = { fg = c.green1 },
-		GlyphPalette7 = { fg = c.fg },
-		GlyphPalette9 = { fg = c.red },
-
-		-- Dashboard
-		DashboardShortCut = { fg = c.cyan },
-		DashboardHeader = { fg = c.blue },
-		DashboardCenter = { fg = c.magenta },
-		DashboardFooter = { fg = c.blue1 },
-		DashboardKey = { fg = c.orange },
-		DashboardDesc = { fg = c.cyan },
-		DashboardIcon = { fg = c.cyan, bold = true },
-
-		-- Alpha
-		AlphaShortcut = { fg = c.purple, bold = true },
-		AlphaHeader = { fg = c.comment },
-		AlphaHeaderLabel = { fg = c.orange },
-		AlphaFooter = { fg = c.comment },
-		AlphaButtons = { fg = c.blue, bold = true },
-		SnacksDashboardHeader = { fg = c.comment },
-		SnacksDashboardSpecial = { fg = c.orange },
-		SnacksDashboardFooter = { fg = c.yellow1 },
-		SnacksDashboardTitle = { fg = c.orange },
-		SnacksDashboardNormal = { fg = c.yellow },
-		SnacksDashboardDesc = { fg = c.blue, bold = true },
-		SnacksDashboardIcon = { fg = c.blue, bold = true },
-
 		-- WhichKey
 		WhichKey = { fg = c.cyan },
 		WhichKeyGroup = { fg = c.blue },
@@ -595,114 +495,16 @@ function M.setup()
 		WhichKeyFloat = { bg = c.bg_sidebar },
 		WhichKeyValue = { fg = c.dark5 },
 
-		-- LspSaga
-		DiagnosticWarning = { link = "DiagnosticWarn" },
-		DiagnosticInformation = { link = "DiagnosticInfo" },
-
-		LspFloatWinNormal = { bg = c.bg_float },
-		LspFloatWinBorder = { fg = c.border_highlight },
-		LspSagaBorderTitle = { fg = c.cyan },
-		LspSagaHoverBorder = { fg = c.blue },
-		LspSagaRenameBorder = { fg = c.green },
-		LspSagaDefPreviewBorder = { fg = c.green },
-		LspSagaCodeActionBorder = { fg = c.blue },
-		LspSagaFinderSelection = { fg = c.bg_visual },
-		LspSagaCodeActionTitle = { fg = c.blue1 },
-		LspSagaCodeActionContent = { fg = c.purple },
-		LspSagaSignatureHelpBorder = { fg = c.red },
-		ReferencesCount = { fg = c.purple },
-		DefinitionCount = { fg = c.purple },
-		DefinitionIcon = { fg = c.blue },
-		ReferencesIcon = { fg = c.blue },
-		TargetWord = { fg = c.cyan },
-
 		-- NeoVim
 		healthError = { fg = c.error },
 		healthSuccess = { fg = c.green1 },
 		healthWarning = { fg = c.warning },
 
-		-- BufferLine
-		BufferLineIndicatorSelected = { fg = c.git.change },
-
-		-- Barbar
-		BufferCurrent = { bg = c.bg, fg = c.fg },
-		BufferCurrentERROR = { bg = c.bg, fg = c.error },
-		BufferCurrentHINT = { bg = c.bg, fg = c.hint },
-		-- BufferCurrentIcon = { bg = c.bg, fg = c.},
-		BufferCurrentINFO = { bg = c.bg, fg = c.info },
-		BufferCurrentWARN = { bg = c.bg, fg = c.warning },
-		BufferCurrentIndex = { bg = c.bg, fg = c.info },
-		BufferCurrentMod = { bg = c.bg, fg = c.warning },
-		BufferCurrentSign = { bg = c.bg, fg = c.bg },
-		BufferCurrentTarget = { bg = c.bg, fg = c.red },
-		BufferAlternate = { bg = c.fg_gutter, fg = c.fg },
-		BufferAlternateERROR = { bg = c.fg_gutter, fg = c.error },
-		BufferAlternateHINT = { bg = c.fg_gutter, fg = c.hint },
-		-- BufferAlternateIcon = { bg = c.fg_gutter, fg = c. },
-		BufferAlternateIndex = { bg = c.fg_gutter, fg = c.info },
-		BufferAlternateINFO = { bg = c.fg_gutter, fg = c.info },
-		BufferAlternateMod = { bg = c.fg_gutter, fg = c.warning },
-		BufferAlternateSign = { bg = c.fg_gutter, fg = c.info },
-		BufferAlternateTarget = { bg = c.fg_gutter, fg = c.red },
-		BufferAlternateWARN = { bg = c.fg_gutter, fg = c.warning },
-		BufferVisible = { bg = c.bg_statusline, fg = c.fg },
-		BufferVisibleERROR = { bg = c.bg_statusline, fg = c.error },
-		BufferVisibleHINT = { bg = c.bg_statusline, fg = c.hint },
-		-- BufferVisibleIcon = { bg = c.bg_statusline, fg = c. },
-		BufferVisibleINFO = { bg = c.bg_statusline, fg = c.info },
-		BufferVisibleWARN = { bg = c.bg_statusline, fg = c.warning },
-		BufferVisibleIndex = { bg = c.bg_statusline, fg = c.info },
-		BufferVisibleMod = { bg = c.bg_statusline, fg = c.warning },
-		BufferVisibleSign = { bg = c.bg_statusline, fg = c.info },
-		BufferVisibleTarget = { bg = c.bg_statusline, fg = c.red },
-		BufferInactive = { bg = util.darken(c.bg_highlight, 0.4), fg = util.darken(c.dark5, 0.8) },
-		BufferInactiveERROR = { bg = util.darken(c.bg_highlight, 0.4), fg = util.darken(c.error, 0.8) },
-		BufferInactiveHINT = { bg = util.darken(c.bg_highlight, 0.4), fg = util.darken(c.hint, 0.8) },
-		-- BufferInactiveIcon = { bg = c.bg_statusline, fg = util.darken(c., 0.1) },
-		BufferInactiveINFO = { bg = util.darken(c.bg_highlight, 0.4), fg = util.darken(c.info, 0.8) },
-		BufferInactiveWARN = { bg = util.darken(c.bg_highlight, 0.4), fg = util.darken(c.warning, 0.8) },
-		BufferInactiveIndex = { bg = util.darken(c.bg_highlight, 0.4), fg = c.dark5 },
-		BufferInactiveMod = { bg = util.darken(c.bg_highlight, 0.4), fg = util.darken(c.warning, 0.8) },
-		BufferInactiveSign = { bg = util.darken(c.bg_highlight, 0.4), fg = c.bg },
-		BufferInactiveTarget = { bg = util.darken(c.bg_highlight, 0.4), fg = c.red },
-		BufferOffset = { bg = c.bg_statusline, fg = c.dark5 },
-		BufferTabpageFill = { bg = util.darken(c.bg_highlight, 0.8), fg = c.dark5 },
-		BufferTabpages = { bg = c.bg_statusline, fg = c.none },
-
-		-- Sneak
-		Sneak = { fg = c.bg_highlight, bg = c.magenta },
-		SneakScope = { bg = c.bg_visual },
-
-		-- Hop
-		HopNextKey = { fg = c.magenta2, bold = true },
-		HopNextKey1 = { fg = c.blue2, bold = true },
-		HopNextKey2 = { fg = util.darken(c.blue2, 0.6) },
-		HopUnmatched = { fg = c.dark3 },
-
 		TSNodeKey = { fg = c.magenta2, bold = true },
 		TSNodeUnmatched = { fg = c.dark3 },
 
-		LeapMatch = { bg = c.magenta2, fg = c.fg, bold = true },
-		LeapLabelPrimary = { fg = c.magenta2, bold = true },
-		LeapLabelSecondary = { fg = c.green1, bold = true },
-		LeapBackdrop = { fg = c.dark3 },
-
 		FlashBackdrop = { fg = c.dark3 },
 		FlashLabel = { bg = c.magenta2, bold = true, fg = c.bg_dark },
-
-		LightspeedGreyWash = { fg = c.dark3 },
-		-- LightspeedCursor = { link = "Cursor" },
-		LightspeedLabel = { fg = c.magenta2, bold = true, underline = true },
-		LightspeedLabelDistant = { fg = c.green1, bold = true, underline = true },
-		LightspeedLabelDistantOverlapped = { fg = c.green2, underline = true },
-		LightspeedLabelOverlapped = { fg = c.magenta2, underline = true },
-		LightspeedMaskedChar = { fg = c.orange },
-		LightspeedOneCharMatch = { bg = c.magenta2, fg = c.fg, bold = true },
-		LightspeedPendingOpArea = { bg = c.magenta2, fg = c.fg },
-		LightspeedShortcut = { bg = c.magenta2, fg = c.fg, bold = true, underline = true },
-		-- LightspeedShortcutOverlapped = { link = "LightspeedShortcut" },
-		-- LightspeedUniqueChar = { link = "LightspeedUnlabeledMatch" },
-		LightspeedUnlabeledMatch = { fg = c.blue2, bold = true },
 
 		-- Cmp
 		CmpDocumentation = { fg = c.fg, bg = c.bg_float },
@@ -721,23 +523,6 @@ function M.setup()
 		CmpItemKindCodeium = { fg = c.teal, bg = c.none },
 		CmpItemKindCopilot = { fg = c.teal, bg = c.none },
 		CmpItemKindTabNine = { fg = c.teal, bg = c.none },
-
-		-- headlines.nvim
-		Headline1 = { bg = c.magenta },
-		CodeBlock = { bg = c.bg_dark },
-
-		-- navic
-		NavicSeparator = { fg = c.fg, bg = c.none },
-		NavicText = { fg = c.fg, bg = c.none },
-
-		AerialNormal = { fg = c.fg, bg = c.none },
-		AerialGuide = { fg = c.fg_gutter },
-		AerialLine = { fg = c.fg, bg = c.bg_highlight },
-
-		IndentBlanklineChar = { fg = c.fg_gutter, nocombine = true },
-		IndentBlanklineContextChar = { fg = c.purple, nocombine = true },
-		IblIndent = { fg = c.fg_gutter, nocombine = true },
-		IblScope = { fg = c.purple, nocombine = true },
 
 		-- Scrollbar
 		ScrollbarHandle = { fg = c.none, bg = c.bg_highlight },
@@ -759,10 +544,6 @@ function M.setup()
 
 		ScrollbarMiscHandle = { fg = c.purple, bg = c.bg_highlight },
 		ScrollbarMisc = { fg = c.purple, bg = c.none },
-
-		-- Yanky
-		YankyPut = { link = "IncSearch" },
-		YankyYanked = { link = "IncSearch" },
 
 		-- Lazy
 		LazyProgressDone = { bold = true, fg = c.magenta2 },
@@ -794,59 +575,6 @@ function M.setup()
 		NotifyINFOBody = { fg = c.fg, bg = options.transparent and c.none or c.bg },
 		NotifyDEBUGBody = { fg = c.fg, bg = options.transparent and c.none or c.bg },
 		NotifyTRACEBody = { fg = c.fg, bg = options.transparent and c.none or c.bg },
-
-		NoNeckPain_background_tab_1_side_left = { bg = options.transparent and c.none or c.bg, fg = c.fg },
-
-		-- Mini
-		MiniCompletionActiveParameter = { underline = true },
-
-		MiniCursorword = { bg = c.fg_gutter },
-		MiniCursorwordCurrent = { bg = c.fg_gutter },
-
-		MiniIndentscopeSymbol = { fg = c.dark5, nocombine = true },
-		MiniIndentscopePrefix = { nocombine = true }, -- Make it invisible
-
-		MiniJump = { bg = c.magenta2, fg = "#ffffff" },
-
-		MiniJump2dSpot = { fg = c.magenta2, bold = true, nocombine = true },
-
-		MiniStarterCurrent = { nocombine = true },
-		MiniStarterFooter = { fg = c.yellow, italic = true },
-		MiniStarterHeader = { fg = c.blue },
-		MiniStarterInactive = { fg = c.comment, style = options.styles.comments },
-		MiniStarterItem = { fg = c.fg, bg = options.transparent and c.none or c.bg },
-		MiniStarterItemBullet = { fg = c.border_highlight },
-		MiniStarterItemPrefix = { fg = c.warning },
-		MiniStarterSection = { fg = c.blue1 },
-		MiniStarterQuery = { fg = c.info },
-
-		MiniStatuslineDevinfo = { fg = c.fg_dark, bg = c.bg_highlight },
-		MiniStatuslineFileinfo = { fg = c.fg_dark, bg = c.bg_highlight },
-		MiniStatuslineFilename = { fg = c.fg_dark, bg = c.fg_gutter },
-		MiniStatuslineInactive = { fg = c.blue, bg = c.bg_statusline },
-		MiniStatuslineModeCommand = { fg = c.black, bg = c.yellow, bold = true },
-		MiniStatuslineModeInsert = { fg = c.black, bg = c.green, bold = true },
-		MiniStatuslineModeNormal = { fg = c.black, bg = c.blue, bold = true },
-		MiniStatuslineModeOther = { fg = c.black, bg = c.teal, bold = true },
-		MiniStatuslineModeReplace = { fg = c.black, bg = c.red, bold = true },
-		MiniStatuslineModeVisual = { fg = c.black, bg = c.magenta, bold = true },
-
-		MiniSurround = { bg = c.orange, fg = c.black },
-
-		MiniTablineCurrent = { fg = c.fg, bg = c.fg_gutter },
-		MiniTablineFill = { bg = c.black },
-		MiniTablineHidden = { fg = c.dark5, bg = c.bg_statusline },
-		MiniTablineModifiedCurrent = { fg = c.warning, bg = c.fg_gutter },
-		MiniTablineModifiedHidden = { bg = c.bg_statusline, fg = util.darken(c.warning, 0.7) },
-		MiniTablineModifiedVisible = { fg = c.warning, bg = c.bg_statusline },
-		MiniTablineTabpagesection = { bg = c.bg_statusline, fg = c.none },
-		MiniTablineVisible = { fg = c.fg, bg = c.bg_statusline },
-
-		MiniTestEmphasis = { bold = true },
-		MiniTestFail = { fg = c.red, bold = true },
-		MiniTestPass = { fg = c.green, bold = true },
-
-		MiniTrailspace = { bg = c.red },
 
 		-- Noice
 
@@ -940,12 +668,6 @@ function M.setup()
 	local inactive = { bg = c.none, fg = c.fg_dark, sp = c.border }
 	-- StatusLineNC
 	theme.highlights.StatusLineNC = inactive
-	-- LuaLine
-	for _, section in ipairs({ "a", "b", "c" }) do
-		theme.defer["lualine_" .. section .. "_inactive"] = inactive
-	end
-	-- mini.statusline
-	theme.highlights.MiniStatuslineInactive = inactive
 
 	options.on_highlights(theme.highlights, theme.colors)
 
