@@ -414,6 +414,10 @@ function M.setup()
 		NeogitDiffDeleteHighlight = { fg = c.git.delete, bg = c.diff.delete },
 		NeogitDiffAddHighlight = { fg = c.git.add, bg = c.diff.add },
 
+		GitSignsAdd = { fg = c.gitSigns.add },
+		GitSignsChange = { fg = c.gitSigns.change },
+		GitSignsDelete = { fg = c.gitSigns.delete },
+
 		-- Neotest
 		NeotestPassed = { fg = c.green },
 		NeotestRunning = { fg = c.yellow },
@@ -433,25 +437,12 @@ function M.setup()
 		NeotestTarget = { fg = c.blue },
 		--[[ NeotestUnknown = {}, ]]
 
-		-- GitGutter
-		GitGutterAdd = { fg = c.gitSigns.add }, -- diff mode: Added line |diff.txt|
-		GitGutterChange = { fg = c.gitSigns.change }, -- diff mode: Changed line |diff.txt|
-		GitGutterDelete = { fg = c.gitSigns.delete }, -- diff mode: Deleted line |diff.txt|
-		GitGutterAddLineNr = { fg = c.gitSigns.add },
-		GitGutterChangeLineNr = { fg = c.gitSigns.change },
-		GitGutterDeleteLineNr = { fg = c.gitSigns.delete },
-
-		-- GitSigns
-		GitSignsAdd = { fg = c.gitSigns.add }, -- diff mode: Added line |diff.txt|
-		GitSignsChange = { fg = c.gitSigns.change }, -- diff mode: Changed line |diff.txt|
-		GitSignsDelete = { fg = c.gitSigns.delete }, -- diff mode: Deleted line |diff.txt|
-
 		DropBarMenuNormalFloat = { link = "Pmenu" },
 		DropBarMenuHoverEntry = { link = "IncSearch", reverse = true },
 		-- Fzflua
 		FzfLuaFzfMatch = { fg = c.orange, bold = true },
 		FzfLuaNormal = { fg = c.fg, bg = c.bg_dark },
-		FzfLuaBorder = { fg = c.fg, bg = c.bg_dark },
+		FzfLuaBorder = { fg = c.fg_dark, bg = c.bg_dark },
 		FzfLuaBackdrop = { bg = c.bg_dark },
 
 		FzfLuaScrollBorderFull = { fg = c.fg_gutter },
@@ -459,14 +450,11 @@ function M.setup()
 		FzfLuaPreviewTitle = { fg = c.bg_dark, bg = c.green, bold = true },
 		FzfLuaFzfScrollbar = { bg = c.bg_highlight }, -- does not work
 
-		--[[ FzfLuaNormal = {
-			bg = c.bg_dark,
-			fg = c.fg_dark,
-		},
-		FzfLuaBorder = {
-			bg = c.bg_dark,
+		FzfLuaTitle = {
 			fg = c.bg_dark,
-		}, ]]
+			bg = c.red,
+			bold = true,
+		},
 		FzfLuaFzfPrompt = {
 			fg = c.bg_dark,
 			bg = c.red,
