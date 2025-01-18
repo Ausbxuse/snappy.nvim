@@ -54,7 +54,7 @@ function M.setup()
 		SignColumnSB = { bg = c.bg_sidebar, fg = c.fg_gutter }, -- column where |signs| are displayed
 		Substitute = { bg = c.red, fg = c.black }, -- |:substitute| replacement text highlighting
 		MatchParen = { fg = c.yellow1, bold = true }, -- The character under the cursor or just before it, if it is a paired bracket, and its match. |pi_paren.txt|
-		ModeMsg = { fg = c.fg_dark, bold = true }, -- 'showmode' message (e.g., "-- INSERT -- ")
+		ModeMsg = { fg = c.green, bold = true }, -- 'showmode' message (e.g., "-- INSERT -- ")
 		MsgArea = { fg = c.fg_dark }, -- Area for messages and cmdline
 		-- MsgSeparator= { }, -- Separator for scrolled messages, `msgsep` flag of 'display'
 		MoreMsg = { fg = c.blue }, -- |more-prompt|
@@ -164,21 +164,6 @@ function M.setup()
 		markdownH1 = { fg = c.magenta, bold = true },
 		markdownH2 = { fg = c.blue, bold = true },
 		markdownLinkText = { fg = c.blue, underline = true },
-		--[[ MarkviewHeading1 = { link="Headline1" },
-		MarkviewHeading2 = { link="Headline2" },
-		MarkviewHeading3 = { link="Headline3" },
-		MarkviewHeading4 = { link="Headline4" },
-		MarkviewHeading5 = { link="Headline5" },
-		MarkviewHeading6 = { link="Headline6" },
-		MarkviewIcon1 = { link="Headline1" },
-		MarkviewIcon2 = { link="Headline2" },
-		MarkviewIcon3 = { link="Headline3" },
-		MarkviewIcon4 = { link="Headline4" },
-		MarkviewIcon5 = { link="Headline5" },
-		MarkviewIcon6 = { link="Headline6" }, ]]
-		MarkviewCheckboxChecked = { bold = true, fg = "#89ddff" },
-		MarkviewCheckboxUnchecked = { bold = true, fg = "#f78c6c" },
-		MarkviewCheckboxPending = { bold = true, fg = "#ff5370" },
 		--[[ ObsidianRightArrow = { bold = true, fg = "#f78c6c" },
 		ObsidianTilde = { bold = true, fg = "#ff5370" },
 		ObsidianBullet = { bold = true, fg = "#89ddff" },
@@ -389,11 +374,6 @@ function M.setup()
 		["@lsp.typemod.variable.static"] = { link = "@constant" },
 		-- NOTE: maybe add these with distinct highlights?
 		-- ["@lsp.typemod.variable.globalScope"] (global variables)
-
-		-- LspTrouble
-		TroubleText = { fg = c.fg_dark },
-		TroubleCount = { fg = c.magenta, bg = c.fg_gutter },
-		TroubleNormal = { fg = c.fg, bg = c.bg_sidebar },
 
 		-- diff
 		diffAdded = { fg = c.git.add },
@@ -615,15 +595,6 @@ function M.setup()
 		Variable = "@variable",
 		Value = "@string",
 	}
-
-	local kind_groups = { "NavicIcons%s", "Aerial%sIcon", "CmpItemKind%s", "NoiceCompletionItemKind%s" }
-	for kind, link in pairs(kinds) do
-		local base = "LspKind" .. kind
-		theme.highlights[base] = { link = link }
-		for _, plugin in pairs(kind_groups) do
-			theme.highlights[plugin:format(kind)] = { link = base }
-		end
-	end
 
 	local markdown_rainbow = { c.magenta, c.yellow, c.green, c.cyan, c.blue, c.purple }
 
