@@ -67,16 +67,27 @@ M.default = {
 	-- green = "#a8d88b", -- a muted, earthy green
 	-- red = "#f97c8e", -- a soft, warm red
 
-	fg = "#e0def4",
-	cyan = "#62d8f1",
-	blue = "#4fc1ff",
-	magenta = "#fc317e",
-	purple = "#bd93f9",
-	purple2 = "#c792ea",
-	orange = "#f69c5e",
-	yellow = "#f4bf75",
-	green = "#9ece6a",
-	red = "#f7768e",
+	-- fg = "#e0def4",
+	-- cyan = "#62d8f1",
+	-- blue = "#4fc1ff",
+	-- magenta = "#fc317e",
+	-- purple = "#bd93f9",
+	-- purple2 = "#c792ea",
+	-- orange = "#f69c5e",
+	-- yellow = "#f4bf75",
+	-- green = "#9ece6a",
+	-- red = "#f7768e",
+
+	fg = "#d4d2e2", -- Softer foreground (light grayish lavender)
+	cyan = "#8fd3e6", -- Muted cyan (soft teal)
+	blue = "#77bdfb", -- Softer blue (muted sky blue)
+	magenta = "#e68098", -- Muted magenta (soft rose)
+	purple = "#a890d3", -- Softer purple (desaturated lavender)
+	purple2 = "#b79acb", -- Muted violet (pastel violet)
+	orange = "#e5a782", -- Softer orange (muted peach)
+	yellow = "#e6c27a", -- Muted yellow (soft gold)
+	green = "#a3c88b", -- Softer green (dusty sage)
+	red = "#e38b96", -- Muted red (soft coral)
 
 	violet = "#b4befe",
 

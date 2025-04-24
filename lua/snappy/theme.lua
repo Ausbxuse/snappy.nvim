@@ -555,7 +555,7 @@ function M.setup()
 		-- NoiceLspProgressClient = { bg = c.bg },
 		-- NoiceLspProgressTitle = { bg = c.bg },
 
-		TreesitterContextBottom = { bg = options.transparent and c.none or c.bg, underline = true },
+		TreesitterContextBottom = { bg = options.transparent and c.none or c.bg },
 		Hlargs = { fg = c.yellow },
 		-- TreesitterContext = { bg = util.darken(c.bg_visual, 0.4) },
 	}
