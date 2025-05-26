@@ -46,38 +46,6 @@ M.default = {
 	blue7 = "#394b70",
 	magenta2 = "#ec5f67",
 
-	-- bg = "#161617",
-	-- fg = "#c9c7cd",
-	-- green = "#90b99f",
-	-- cyan = "#85b5ba",
-	-- blue = "#92a2d5",
-	-- purple = "#aca1cf",
-	-- magenta = "#e29eca",
-	-- red = "#ea83a5",
-	-- orange = "#f5a191",
-	-- yellow = "#e6b99d",
-	--
-	-- fg = "#f0e9fa", -- a gentle, light lavender for primary text
-	-- cyan = "#7ac9e8", -- a soft, airy cyan
-	-- blue = "#6ab0f7", -- a calming pastel blue
-	-- magenta = "#fb8ea6", -- a subtle, soothing magenta
-	-- purple = "#cbb8f8", -- a delicate pastel purple
-	-- orange = "#f8a57e", -- a warm, mellow orange
-	-- yellow = "#f5c07e", -- a gentle, soft yellow
-	-- green = "#a8d88b", -- a muted, earthy green
-	-- red = "#f97c8e", -- a soft, warm red
-
-	-- fg = "#e0def4",
-	-- cyan = "#62d8f1",
-	-- blue = "#4fc1ff",
-	-- magenta = "#fc317e",
-	-- purple = "#bd93f9",
-	-- purple2 = "#c792ea",
-	-- orange = "#f69c5e",
-	-- yellow = "#f4bf75",
-	-- green = "#9ece6a",
-	-- red = "#f7768e",
-
 	fg = "#d4d2e2", -- Softer foreground (light grayish lavender)
 	cyan = "#8fd3e6", -- Muted cyan (soft teal)
 	blue = "#77bdfb", -- Softer blue (muted sky blue)

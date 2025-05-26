@@ -48,7 +48,7 @@ function M.setup()
 		ErrorMsg = { fg = c.error }, -- error messages on the command line
 		VertSplit = { fg = c.border }, -- the column separating vertically split windows
 		WinSeparator = { fg = c.violet, bold = true }, -- the column separating vertically split windows
-		Folded = { fg = c.blue, bg = options.transparent and c.none or c.bg }, -- line used for closed folds
+		Folded = { fg = c.fg_dark, bg = options.transparent and c.none or c.bg }, -- line used for closed folds
 		FoldColumn = { bg = options.transparent and c.none or c.bg, fg = c.comment }, -- 'foldcolumn'
 		SignColumn = { bg = options.transparent and c.none or c.bg, fg = c.fg_gutter }, -- column where |signs| are displayed
 		SignColumnSB = { bg = c.bg_sidebar, fg = c.fg_gutter }, -- column where |signs| are displayed
@@ -547,6 +547,7 @@ function M.setup()
 		NotifyTRACEBody = { fg = c.fg, bg = options.transparent and c.none or c.bg },
 
 		-- Noice
+		IndentBlankLineContextChar = { fg = c.fg_dark, bg = c.none },
 
 		NoiceCompletionItemKindDefault = { fg = c.fg_dark, bg = c.none },
 		-- BUG: can't use transparent background
